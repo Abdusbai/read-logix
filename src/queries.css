@@ -1,0 +1,130 @@
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .book-details .more-infos .rating .stars span {
+    height: 19px;
+    width: 19px;
+  }
+}
+
+@media (max-width: 61em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 69em) {
+  .main section .section .list-books .header-list .header-list-ls li {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #root>div>section>div:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #root>div>section>div:nth-child(2) {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    margin-left: 0;
+  }
+
+  #root>div>section>div:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 2/-1;
+
+  }
+
+
+  .main section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .main section .section .list-books .header-list {
+    padding: 2rem;
+  }
+
+  .main section .section .book-list li {
+    padding: 1.6rem 2rem;
+  }
+
+  .main header img {
+    height: 2rem;
+  }
+
+  .main header input {
+    padding: .7rem 1.3rem;
+  }
+}
+
+@media (max-width: 44em) {
+
+  .main {
+    padding: 1.5rem;
+  }
+
+  .main section .section {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 41.62em) {
+  .section .todoList-info .list-add {
+    flex-direction: column;
+  }
+
+  .section .todoList-info .list-add .addClear {
+    margin-right: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .section .todoList-info .list-add .addClear button {
+    width: 100%;
+  }
+
+  .section .todoList-info .list-add .todo-text {
+    width: 100%;
+  }
+
+  .book-details .more-infos,
+  .book-details .desc {
+    margin: 2rem;
+  }
+
+  .main header {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .main header .header-search {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main header input {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .main header .logos {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 35em) {
+  .main section .section .book-list li img {
+    width: 80%;
+  }
+
+  .main section .section .book-list li {
+    column-gap: 1rem;
+  }
+}
