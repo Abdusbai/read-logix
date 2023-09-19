@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap");
 
 ::-webkit-scrollbar {
   width: 1.4rem;
@@ -40,734 +40,739 @@ html {
   height: -webkit-fill-available;
 }
 body {
-  font-family: 'Cairo', sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #495057;
-    position: relative;
-    height: -webkit-fill-available;
-  }
-  
-  
-  .container {
-    height: -webkit-fill-available;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-background-900);
-  }
-  
-  
-  .container .log-form {
-    width: 100%;
-    max-width: 38rem;
-    background-color: var(--color-background-100);
-    padding: 3rem;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .container .log-form img {
-    height: 3rem;
-    margin-bottom: 3rem;
-  }
-  
-  .container .form-control {
-    width: 100%;
-    position: relative;
-    margin-bottom: 0.7rem;
-  }
-  
-  .container .form-control a:link,
-  .container .form-control a:visited {
-    margin-top: 0.5rem;
-    color: var(--color-text);
-    display: block;
-    font-size: 1.4rem;
-    text-decoration: none;
-  }
-  
-  .container .form-control a:hover {
-    text-decoration: underline;
-  }
-  
-  .container .form-control .icon {
-    position: absolute;
-    top: 9.2px;
-    left: 8.5px;
-    height: 2rem;
-    width: 2.5rem;
-  }
-  
-  .form-control.error input {
-    border: 2px solid var(--color-red-dark) !important;
-  }
-  
-  .form-control.error input:focus {
-    outline: 4px solid rgba(224, 49, 49, 0.6) !important;
-  }
-  
-  .container .form-control input {
-    display: block;
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 1rem 1rem 1rem 4rem;
-    font-weight: 500;
-    font-family: inherit;
-    letter-spacing: 1px;
-    color: inherit;
-    border: 2px solid transparent;
-    border-radius: 10px;
-  }
-  
-  .signUp input {
-    padding: 1rem !important;
-  }
-  
-  .container .form-control small {
-    color: var(--color-red);
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 4px;
-    display: inline-block;
-  }
-  
-  .container .form-control input:focus {
-    outline: 4px solid rgba(237, 255, 255, 0.3);
-  }
-  
-  .btn {
-    background-color: var(--color-primary);
-    font-size: 1.5rem;
-    font-weight: 700;
-    width: 100%;
-    padding: .6rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    color: var(--color-text);
-    cursor: pointer;
-    font-family: inherit;
-    letter-spacing: 1px;
-    transition: all 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: var(--color-primary-light);
-  }
-  
-  .btn-l {
-    margin-bottom: 1.5rem;
-  }
-  
-  .text-btn {
-    color: var(--color-text);
-    font-size: 1.4rem;
-  }
-  
-  .text-btn .log-reg {
-    color: var(--color-text-dark);
-    text-decoration: underline;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .text-btn .log-reg:hover {
-    color: var(--color-text);
-  }
-  
-  .main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem;
-  }
-  
-  .main header {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-primary);
-    padding: 1.5rem 3rem;
-  }
-  
-  .main header .logos {
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .main header .header-search {
-    display: flex;
-    align-items: center;
-    width: 60%;
-  }
-  
-  
-  .main header input {
-    font-family: inherit;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    padding: .6rem 1.2rem;
-    width: 100%;
-    font-weight: 500;
-    margin-left: 4rem;
-    margin-right: 2rem;
-  }
-  
-  .main header input:focus {
-    outline: 4px solid rgba(237, 255, 255, 0.3);
-  }
-  
-  
-  
-  .main header img {
-    height: 2.5rem;
-  }
-  
-  .showMoreLess {
-    font-weight: 400;
-    font-size: 1.4rem;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  .main header p {
-    font-size: 1.5rem;
-    color: var(--color-text);
-    font-weight: 500;
-    min-width: 12rem;
-    text-align: right;
-  }
-  
-  .main header p span {
-    font-weight: 700;
-  }
-  
-  .main section {
-    flex: 1;
-    height: 60%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    position: relative;
-  }
-  
-  .main section .section {
-    background-color: var(--color-background-500);
-    margin-left: 2rem;
-    margin-top: 2rem;
-    border-radius: 20px;
-    overflow-y: auto;
-    position: relative;
-  }
-  
-  .main section .section .open-close {
-    position: absolute;
-    color: var(--color-background-900);
-    right: 10px;
-    top: 10px;
-    height: 2.5rem;
-    width: 2.5rem;
-    cursor: pointer;
-    z-index: 99;
-    background-color: var(--color-text-dark);
-    border-radius: 999px;
-  }
-  
-  
-  
-  .main section .section .list-books {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .main section .section .icon-back {
-    position: absolute;
-    color: var(--color-background-900);
-    left: 10px;
-    top: 10px;
-    height: 3.5rem;
-    width: 3.5rem;
-    cursor: pointer;
-    z-index: 99;
-    background-color: var(--color-text-dark);
-    border-radius: 999px;
-  }
-  
-  .main section .section:nth-child(1) {
-    margin-left: 0rem;
-  }
-  
-  .main section .section .book-list {
-    list-style: none;
-  }
-  
-  .main section .section .book-list li img {
-    width: 100%;
-  }
-  
-  .main section .section .book-list li h3 {
-    font-size: 1.7rem;
-    margin-bottom: 1.5rem;
-    color: var(--color-text);
-    text-transform: capitalize;
-    margin-right: 2rem;
-  }
-  
-  .main section .section .book-list li .details {
-    font-size: 1.3rem;
-    color: var(--color-text);
-  }
-  
-  .main section .section .book-list li .details span:not(:last-child) {
-    display: block;
-    margin-bottom: 0.6rem;
-  }
-  
-  .main section .section .book-list li {
-    display: grid;
-    grid-template-columns: 6rem 1fr;
-    grid-template-rows: auto auto;
-    align-items: center;
-    column-gap: 2rem;
-    padding: 1.8rem 3.2rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-bottom: 1px solid var(--color-background-900);
-  }
-  
-  .main section .section .book-list li:hover {
-    background-color: var(--color-background-100);
-  }
-  
-  .book-details .header {
-    background-color: var(--color-background-500);
-    display: flex;
-  }
-  
-  .book-details .header img {
-    width: 25%;
-  }
-  
-  .book-details .header .infos {
-    padding: 2rem 3rem 2rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .book-details .header .infos h3 {
-    font-size: 1.8rem;
-    color: var(--color-text);
-    margin-bottom: 1.5rem;
-    text-transform: capitalize;
-    margin-right: 2rem;
-  }
-  
-  .book-details .header .infos p {
-    color: #fff;
-    text-transform: capitalize;
-  }
-  
-  .book-details .header .infos p span {
-    display: block;
-    font-size: 1.3rem;
-    text-transform: capitalize;
-  }
-  
-  .book-details .header .infos p span:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-  
-  .book-details .more-infos {
-    margin: 3rem;
-    background-color: var(--color-background-900);
-    border-radius: 20px;
-  }
-  
-  .book-details .more-infos .stars,
-  .book-details .more-infos .stars .st {
-    display: flex;
-    align-items: center;
-  }
-  
-  .book-details .more-infos .stars {
-    gap: 1rem;
-  }
-  
-  .book-details .more-infos .stars .stars-number {
-    color: #fcc419;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  
-  .book-details .more-infos .rating {
-    padding: 2rem;
-    border-radius: 20px;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .book-details .more-infos .rating .already-rated {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-text);
-    text-align: center !important;
-  }
-  
-  .book-details .more-infos .rating .stars span {
-    width: 24px;
-    height: 24px;
-    display: block;
-    cursor: pointer;
-  }
-  
-  .book-details .more-infos .rating .btn-add {
-    width: fit-content;
-  }
-  
-  .book-details .desc {
-    margin: 3rem;
-    font-size: 1.5rem;
-    color: var(--color-text);
-    line-height: 1.3;
-  }
-  
-  .book-details .desc em {
-    margin-bottom: 1.5rem !important;
-    display: block;
-  }
-  
-  .book-details .desc .descBtn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .book-details .desc .descBtn a:link,
-  .book-details .desc .descBtn a:visited {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: .7rem 1.4rem;
-  }
-  
-  .disabled-button {
-    pointer-events: none !important;
-    opacity: 0.6 !important;
-  }
-  
-  .book-details .desc p {
-    display: block;
-    padding-top: 0.7rem;
-    text-transform: capitalize;
-  }
-  
-  body>div>div>section>div:nth-child(2)>div>div.desc>p:nth-child(4) {
-    padding-bottom: 1.5rem !important;
-  }
-  
-  .main section .section .list-books .header-list {
-    padding: 3.3rem;
-    background-color: var(--color-background-100);
-    z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1.2rem 2.4rem;
-  }
-  
-  .main section .section .list-books .header-list h3 {
-    font-size: 1.8rem;
-    color: var(--color-text);
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-  }
-  
-  .main section .section .list-books .header-list .header-list-ls {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    color: var(--color-text);
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  
-  .main section .section .list-books .header-list .header-list-ls li {
-    display: flex;
-    gap: .5rem;
-  }
-  
-  .main section .section .list-books .read-list {
-    height: 100%;
-    overflow: auto;
-  }
-  
-  .main section .section .list-books .read-list img {
-    width: 10%;
-  }
-  
-  .main section .section .list-books .read-list h3 {
-    color: var(--color-text);
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-  }
-  
-  .main section .section .list-books .read-list .book-rd {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 3rem;
-    list-style: none;
-    border-bottom: 1px solid var(--color-background-900);
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .main section .section .list-books .read-list .book-rd:hover {
-    background-color: var(--color-background-100);
-  }
-  
-  .main section .section .list-books .read-list .bk-info {
-    width: 100%;
-  }
-  
-  .main section .section .list-books .read-list .book-rd .item-close {
-    min-width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    background-color: var(--color-red);
-    border-radius: 999px;
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 2rem;
-  }
-  
-  .main section .section .list-books .read-list .book-rd .item-close:hover {
-    background-color: var(--color-red-dark);
-  }
-  
-  .main section .section .list-books .read-list .bk-info ul {
-    display: flex;
-    color: var(--color-text);
-    font-size: 1.5rem;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-  }
-  
-  .section .todoList-info {
-    display: flex;
-    flex-direction: column;
-  
-    height: 100%;
-  }
-  
-  .section .todoList-info .list-todo {
-    height: 100%;
-    overflow: auto;
-  }
-  
-  .section .todoList-info .list-todo .tasks {
-    list-style: none;
-    padding: 2rem;
-  }
-  
-  .section .todoList-info .list-todo .tasks .task-element {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.2rem;
-    padding: 1rem 0;
-  }
-  
-  .section .todoList-info .list-todo .tasks .task-element input[type="checkbox"] {
-    accent-color: var(--color-primary);
-    height: 1.5rem;
-    width: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .section .todoList-info .list-todo .tasks .task-element button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .section .todoList-info .list-todo .tasks .task-element label {
-    font-size: 1.5rem;
-    color: var(--color-text);
-    text-transform: capitalize;
-    font-weight: 400;
-    width: 100%;
-    cursor: pointer;
-  }
-  
-  .section .todoList-info .list-todo .tasks .task-element label.line-through {
-    text-decoration: line-through;
-  }
-  
-  .section .todoList-info .list-add {
-    background-color: var(--color-background-100);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1.2rem 2.4rem;
-  }
-  
-  .section .todoList-info .list-add .addClear {
-    display: flex;
-    gap: 1rem;
-    margin-right: 3rem;
-  }
-  
-  .section .todoList-info .list-add .todo-text {
-    font-family: inherit;
-    border: none;
-    border-radius: 5px;
-    padding: 0.7rem 1.4rem;
-    font-size: 1.3rem;
-    width: 80%;
-  }
-  
-  .section .todoList-info .list-add .todo-text:focus {
-    outline: 4px solid rgba(237, 255, 255, 0.3);
-  }
-  
-  .section .todoList-info .list-add .todo-btn {
-    background-color: var(--color-primary);
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--color-text);
-    padding: 0.7rem 1.8rem;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    height: 100%;
-  
-    transition: all 0.3s;
-  }
-  
-  .section .todoList-info .list-add .todo-btn:hover {
-    background-color: var(--color-primary-light);
-  }
-  
-  .section .todoList-info .footer {
-    background-color: var(--color-background-100);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px -1.2rem 2.4rem;
-  }
-  
-  .section .todoList-info .footer h3 {
-    font-size: 1.6rem;
-    color: var(--color-text);
-    text-transform: uppercase;
-  }
-  
-  .section .todoList-info .footer .log-set .log-icon {
-    color: var(--color-text);
-    height: 3rem;
-    width: 3rem;
-    margin-left: 1rem;
-    cursor: pointer;
-  }
-  
-  .section .todoList-info .footer .profile-data {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .section .todoList-info .footer .profile-data .profile-icon {
-    height: 5rem;
-    width: 5rem;
-    fill: var(--color-text) !important;
-  }
-  
-  .spinner {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: radial-gradient(farthest-side, #dee2e6 94%, #0000) top/6.4px 6.4px no-repeat,
-      conic-gradient(#0000 30%, #dee2e6);
-    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 6.4px), #000 0);
-    animation: spinner-c7wet2 0.8s infinite linear;
-  }
-  
-  .login-spinner {
-    height: 20px !important;
-    width: 20px !important;
-  }
-  
-  @keyframes spinner-c7wet2 {
-    100% {
-      transform: rotate(1turn);
-    }
-  }
-  
-  .btn-h {
-    height: 5rem !important;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .pos-abs {
-    position: absolute !important;
-    top: 48% !important;
-    left: 45.5% !important;
-  }
-  
-  .message-error {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--color-text);
-    font-size: 1.6rem;
-    font-weight: 600;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .social-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    position: relative;
-    z-index: 10;
-  }
-    .social-links a:link,
-    .social-links a:visited {
-      height: 2.5rem;
-    }
-  
-    .social-links .social-icon {
-      height: 2.5rem;
-      fill: var(--color-text);
-      transition: all 0.3s;
-    }
+  font-family: "Cairo", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #495057;
+  position: relative;
+  height: 100vh;
+}
 
-                                                                                                                                                                                                                                                                .social-links .social-icon:hover {
-                                                                                                                                                                                                                                                                  fill: var(--color-text-dark);
-                                                                                                                                                                                                                                                                }
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background-900);
+}
+
+.container .log-form {
+  width: 100%;
+  max-width: 38rem;
+  background-color: var(--color-background-100);
+  padding: 3rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .log-form img {
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.container .form-control {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.7rem;
+}
+
+.container .form-control a:link,
+.container .form-control a:visited {
+  margin-top: 0.5rem;
+  color: var(--color-text);
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.container .form-control a:hover {
+  text-decoration: underline;
+}
+
+.container .form-control .icon {
+  position: absolute;
+  top: 9.2px;
+  left: 8.5px;
+  height: 2rem;
+  width: 2.5rem;
+}
+
+.form-control.error input {
+  border: 2px solid var(--color-red-dark) !important;
+}
+
+.form-control.error input:focus {
+  outline: 4px solid rgba(224, 49, 49, 0.6) !important;
+}
+
+.container .form-control input {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1rem 1rem 1rem 4rem;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: 1px;
+  color: inherit;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.signUp input {
+  padding: 1rem !important;
+}
+
+.container .form-control small {
+  color: var(--color-red);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 4px;
+  display: inline-block;
+}
+
+.container .form-control input:focus {
+  outline: 4px solid rgba(237, 255, 255, 0.3);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-light);
+}
+
+.btn-l {
+  margin-bottom: 1.5rem;
+}
+
+.text-btn {
+  color: var(--color-text);
+  font-size: 1.4rem;
+}
+
+.text-btn .log-reg {
+  color: var(--color-text-dark);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.text-btn .log-reg:hover {
+  color: var(--color-text);
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.main header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  padding: 1.5rem 3rem;
+}
+
+.main header .logos {
+  display: flex;
+  gap: 2rem;
+}
+
+.main header .header-search {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.main header input {
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  width: 100%;
+  font-weight: 500;
+  margin-left: 4rem;
+  margin-right: 2rem;
+}
+
+.main header input:focus {
+  outline: 4px solid rgba(237, 255, 255, 0.3);
+}
+
+.main header img {
+  height: 2.5rem;
+}
+
+.showMoreLess {
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main header p {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  font-weight: 500;
+  min-width: 12rem;
+  text-align: right;
+}
+
+.main header p span {
+  font-weight: 700;
+}
+
+.main section {
+  flex: 1;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.main section .section {
+  background-color: var(--color-background-500);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.main section .section .open-close {
+  position: absolute;
+  color: var(--color-background-900);
+  right: 10px;
+  top: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  z-index: 99;
+  background-color: var(--color-text-dark);
+  border-radius: 999px;
+}
+
+.main section .section .list-books {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main section .section .icon-back {
+  position: absolute;
+  color: var(--color-background-900);
+  left: 10px;
+  top: 10px;
+  height: 3.5rem;
+  width: 3.5rem;
+  cursor: pointer;
+  z-index: 99;
+  background-color: var(--color-text-dark);
+  border-radius: 999px;
+}
+
+.main section .section:nth-child(1) {
+  margin-left: 0rem;
+}
+
+.main section .section .book-list {
+  list-style: none;
+}
+
+.main section .section .book-list li img {
+  width: 100%;
+}
+
+.main section .section .book-list li h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  text-transform: capitalize;
+  margin-right: 2rem;
+}
+
+.main section .section .book-list li .details {
+  font-size: 1.3rem;
+  color: var(--color-text);
+}
+
+.main section .section .book-list li .details span:not(:last-child) {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.main section .section .book-list li {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 1.8rem 3.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 1px solid var(--color-background-900);
+}
+
+.main section .section .book-list li:hover {
+  background-color: var(--color-background-100);
+}
+
+.book-details .header {
+  background-color: var(--color-background-500);
+  display: flex;
+}
+
+.book-details .header img {
+  width: 25%;
+}
+
+.book-details .header .infos {
+  padding: 2rem 3rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-details .header .infos h3 {
+  font-size: 1.8rem;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  margin-right: 2rem;
+}
+
+.book-details .header .infos p {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.book-details .header .infos p span {
+  display: block;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.book-details .header .infos p span:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.book-details .more-infos {
+  margin: 3rem;
+  background-color: var(--color-background-900);
+  border-radius: 20px;
+}
+
+.book-details .more-infos .stars,
+.book-details .more-infos .stars .st {
+  display: flex;
+  align-items: center;
+}
+
+.book-details .more-infos .stars {
+  gap: 1rem;
+}
+
+.book-details .more-infos .stars .stars-number {
+  color: #fcc419;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.book-details .more-infos .rating {
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-details .more-infos .rating .already-rated {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: center !important;
+}
+
+.book-details .more-infos .rating .stars span {
+  width: 24px;
+  height: 24px;
+  display: block;
+  cursor: pointer;
+}
+
+.book-details .more-infos .rating .btn-add {
+  width: fit-content;
+}
+
+.book-details .desc {
+  margin: 3rem;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.book-details .desc em {
+  margin-bottom: 1.5rem !important;
+  display: block;
+}
+
+.book-details .desc .descBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.book-details .desc .descBtn a:link,
+.book-details .desc .descBtn a:visited {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.4rem;
+}
+
+.disabled-button {
+  pointer-events: none !important;
+  opacity: 0.6 !important;
+}
+
+.book-details .desc p {
+  display: block;
+  padding-top: 0.7rem;
+  text-transform: capitalize;
+}
+
+body
+  > div
+  > div
+  > section
+  > div:nth-child(2)
+  > div
+  > div.desc
+  > p:nth-child(4) {
+  padding-bottom: 1.5rem !important;
+}
+
+.main section .section .list-books .header-list {
+  padding: 3.3rem;
+  background-color: var(--color-background-100);
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1.2rem 2.4rem;
+}
+
+.main section .section .list-books .header-list h3 {
+  font-size: 1.8rem;
+  color: var(--color-text);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.main section .section .list-books .header-list .header-list-ls {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main section .section .list-books .header-list .header-list-ls li {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main section .section .list-books .read-list {
+  height: 100%;
+  overflow: auto;
+}
+
+.main section .section .list-books .read-list img {
+  width: 10%;
+}
+
+.main section .section .list-books .read-list h3 {
+  color: var(--color-text);
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.main section .section .list-books .read-list .book-rd {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem;
+  list-style: none;
+  border-bottom: 1px solid var(--color-background-900);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.main section .section .list-books .read-list .book-rd:hover {
+  background-color: var(--color-background-100);
+}
+
+.main section .section .list-books .read-list .bk-info {
+  width: 100%;
+}
+
+.main section .section .list-books .read-list .book-rd .item-close {
+  min-width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: var(--color-red);
+  border-radius: 999px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.main section .section .list-books .read-list .book-rd .item-close:hover {
+  background-color: var(--color-red-dark);
+}
+
+.main section .section .list-books .read-list .bk-info ul {
+  display: flex;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.section .todoList-info {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.section .todoList-info .list-todo {
+  height: 100%;
+  overflow: auto;
+}
+
+.section .todoList-info .list-todo .tasks {
+  list-style: none;
+  padding: 2rem;
+}
+
+.section .todoList-info .list-todo .tasks .task-element {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 1rem 0;
+}
+
+.section .todoList-info .list-todo .tasks .task-element input[type="checkbox"] {
+  accent-color: var(--color-primary);
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.section .todoList-info .list-todo .tasks .task-element button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.section .todoList-info .list-todo .tasks .task-element label {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  text-transform: capitalize;
+  font-weight: 400;
+  width: 100%;
+  cursor: pointer;
+}
+
+.section .todoList-info .list-todo .tasks .task-element label.line-through {
+  text-decoration: line-through;
+}
+
+.section .todoList-info .list-add {
+  background-color: var(--color-background-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1.2rem 2.4rem;
+}
+
+.section .todoList-info .list-add .addClear {
+  display: flex;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+.section .todoList-info .list-add .todo-text {
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1.3rem;
+  width: 80%;
+}
+
+.section .todoList-info .list-add .todo-text:focus {
+  outline: 4px solid rgba(237, 255, 255, 0.3);
+}
+
+.section .todoList-info .list-add .todo-btn {
+  background-color: var(--color-primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-text);
+  padding: 0.7rem 1.8rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  height: 100%;
+
+  transition: all 0.3s;
+}
+
+.section .todoList-info .list-add .todo-btn:hover {
+  background-color: var(--color-primary-light);
+}
+
+.section .todoList-info .footer {
+  background-color: var(--color-background-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1.2rem 2.4rem;
+}
+
+.section .todoList-info .footer h3 {
+  font-size: 1.6rem;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.section .todoList-info .footer .log-set .log-icon {
+  color: var(--color-text);
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.section .todoList-info .footer .profile-data {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section .todoList-info .footer .profile-data .profile-icon {
+  height: 5rem;
+  width: 5rem;
+  fill: var(--color-text) !important;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #dee2e6 94%, #0000) top/6.4px 6.4px
+      no-repeat,
+    conic-gradient(#0000 30%, #dee2e6);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - 6.4px),
+    #000 0
+  );
+  animation: spinner-c7wet2 0.8s infinite linear;
+}
+
+.login-spinner {
+  height: 20px !important;
+  width: 20px !important;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.btn-h {
+  height: 5rem !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.pos-abs {
+  position: absolute !important;
+  top: 48% !important;
+  left: 45.5% !important;
+}
+
+.message-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-text);
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  z-index: 10;
+}
+.social-links a:link,
+.social-links a:visited {
+  height: 2.5rem;
+}
+
+.social-links .social-icon {
+  height: 2.5rem;
+  fill: var(--color-text);
+  transition: all 0.3s;
+}
+
+.social-links .social-icon:hover {
+  fill: var(--color-text-dark);
+}
