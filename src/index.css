@@ -45,11 +45,11 @@ body {
   font-weight: 400;
   color: #495057;
   position: relative;
-  height: 100vh;
+  height: 100svh;
 }
 
 .container {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
